@@ -1,0 +1,29 @@
+{
+  "name": "Razorfish Front End Styleguide",
+  "version": "2.0.0",
+  "authors": [
+    "Martin Krause <Martin.Krause@razorfish.de>"
+  ],
+  "description": "The Razorfish Germany Front End Styleguide.",
+  "main": ["styleguide.md", "readme.md", "structure.md"],
+  "keywords": [
+    "front end",
+    "styleguide",
+    "razorfish",
+    "css",
+    "html",
+    "javascript",
+    "grunt",
+    "bower",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "razorfish.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
