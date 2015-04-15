@@ -1,6 +1,4 @@
-
-
-## Project Structure
+# Project Structure
 ```
 	/assets
 	  ├── /fonts
@@ -16,11 +14,12 @@
 	  └── /videos
 	  │
 	[/bower_components]
+	  │     ├── /razorfish-germany-front-end-styleguide
 	  │     ├── /jQuery
 	  │     └── /normalize.css
 	  │     └── …
 	 /docs
-	  │     └── styleguide.md
+	  │     
 	 /grunt
 	  │     ├── /templates
 	  │     └── /tasks
@@ -53,9 +52,9 @@
 	  │     ├── typography.css
 	  │     └── …
 	  ├── /modules
-	  │     ├── base.css [base.scss,base.sass,base.less]
-	  │     ├── footer.css [footer.scss,footer.sass,footer.less]
-	  │     ├── header.css [header.scss,header.sass,header.less]
+	  │     ├── base.css
+	  │     ├── footer.css
+	  │     ├── header.css
 	  │     └── …
 	  ├── /build
 	  │     └── styles.css
@@ -100,10 +99,10 @@ All grunt-tasks. One file per task.
 Mock-data, usually as `JSON`
 
 ## /scripts
-All (java)script files. Organized in `base` and `modules`. Please use a “one file for one feature” approach and take a look at the templates in `_template`. There's also a `build` folder if you're building minimized files locally.
+All (java)script files. Organised in `base` and `modules`. Please use a “one file for one feature” approach and take a look at the templates in `_template`. There's also a `build` folder if you're building minimised files locally.
 
 ## /styles
- All *css files. If you like myth, sass or less this is the place to store them. Again, organized in `base` and `modules`. Please use a “one file for one feature” approach. There's also a `build` folder if you're building minimized files locally.
+ All *css files. If you like myth, sass or less this is the place to store them. Again, organised in `base` and `modules`. Please use a “one file for one feature” approach. There's also a `build` folder if you're building minimised files locally.
 
 ## /tests
 We like automated testing. We prefer BDD using Mocha with Chai and Sinon or Jasmine. Use DalekJS/NightwatchJs/NightmareJs for acceptance testing. Please integrate them in your build process.
