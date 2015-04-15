@@ -1,13 +1,56 @@
 # Razorfish Front End Style Guide
 
+<!-- MarkdownTOC depth=3 autolink=false bracket=round -->
+
+- Preface
+- Scope
+- Setups
+	- Requirements
+- Revision Control
+- Licenses
+- TL;DR
+- Build & Deployment
+	- TL;DR
+	- Grunt
+- Coding Style
+	- TL;DR
+	- Comments
+- HTML
+	- TL;DR
+- CSS
+	- TL;DR
+	- Architecture
+	- Comments
+	- Whitespace
+	- Validation
+	- Best Practice
+- SASS
+	- TL;DR
+- JavaScript
+	- TL;DR
+	- Architecture
+	- Comments
+	- Validation
+	- Automated Tests
+	- Variables
+	- Whitespace
+	- Best Practice
+	- jQuery
+	- TL;DR
+	- Plugins
+	- Best practice
+- Questions
+
+<!-- /MarkdownTOC -->
+
 ## Preface
 > Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. ~Martin Golding
 
 
 Some people claim their code doesn't need documentation — it would explain itself.
-Some people claim their code doesn’t need structure — rules would hinder their creativity.
-Some people claim their code doesn’t need testing — it won’t change.
-Well, that’s just not true. Coding is not “writing the code” is about maintaining the code. The more readable, structured, tested our code is, the easier it is to maintain and to extend.
+Some people claim their code doesn't need structure — rules would hinder their creativity.
+Some people claim their code doesn't need testing — it won’t change.
+Well, that's just not true. Coding is not “writing the code” is about maintaining the code. The more readable, structured, tested our code is, the easier it is to maintain and to extend.
 
 A consistent style guide, a complete set of automated tests which are enforced and automated as much as possible helps to improve the overall quality and maintainability of every project. If you're working with a common setup in a familiar structure you already have a head start in every project. It's easier to browse, locate and fix bugs if you instantly know what is happening.
 Think about the other developers stepping in to assist you in the last sprint and maintaining the code in the next years.
@@ -67,19 +110,18 @@ If you're using “web-fonts” never “just use this file”. Verify with the 
 Automation simplifies a lot, the less you have to worry about minification, compilation, unit testing, linting, the easier your job becomes. The CI-Server creates the build-packages and deploys them automatically so you don't have to worry about this.
 Remember: During the build, all css and javascript files will be concatenated, minified, and *validated* — an error will break the build.
 
-### Grunt
-As mentioned before, we're using [grunt.js][gruntjs]. The Razorfish-Boilerplate contains a lot of pre-configured tasks. Just type `$ grunt --help` to see a list or take a look at `./grunt/tasks/`.
-
-To add a new file to the project, edit the “sources.scripts.project” / “sources.scripts.vendor” / “sources.styles.project” / “sources.styles.vendor” properties. They will distribute the files to all the tasks, in the order you entered them and vendor-files before project-files. Afterwards, type `$ grunt create-loader` / `$ grunt create-loader:styles` / `$ grunt create-loader:scripts`.
-Please note: the default development setting will use the original files. If you create a “release” with `$ grunt release` the minified files are used there.
-
-
 ### TL;DR
 - Always use a build system and a deployment strategy.
 - Failing tests or validation errors will break your build.
 - Deploy only minified and concatenated files.
 - Deploy as less files as possible.
 - To add css or javascript files: update the source-property in the pacakge.json and run `$ grunt create-loader`
+
+### Grunt
+As mentioned before, we're using [grunt.js][gruntjs]. The Razorfish-Boilerplate contains a lot of pre-configured tasks. Just type `$ grunt --help` to see a list or take a look at `./grunt/tasks/`.
+
+To add a new file to the project, edit the “sources.scripts.project” / “sources.scripts.vendor” / “sources.styles.project” / “sources.styles.vendor” properties. They will distribute the files to all the tasks, in the order you entered them and vendor-files before project-files. Afterwards, type `$ grunt create-loader` / `$ grunt create-loader:styles` / `$ grunt create-loader:scripts`.
+Please note: the default development setting will use the original files. If you create a “release” with `$ grunt release` the minified files are used there.
 
 
 ## Coding Style
@@ -319,10 +361,7 @@ Every file will be linted during the build. We’re using [CSS Lint][csslint] fo
 	.layout-grid--size-6 {
 		width: 66%;
 	}
-
-
- ```
-
+```
 
 ## SASS
 

@@ -1,4 +1,23 @@
-# Project Structure
+# Razorfish Default Structure
+
+<!-- MarkdownTOC depth=3 autolink=false bracket=round -->
+
+- Project Structure
+	- /assets
+	- /bower_components
+	- /docs
+	- /grunt
+	- /mock
+	- /scripts
+	- /styles
+	- /tests
+	- /vendor
+- Contribution
+
+<!-- /MarkdownTOC -->
+
+
+## Project Structure
 ```
 	/assets
 	  ├── /fonts
@@ -81,37 +100,37 @@
 	robots.txt
 ```
 
-## /assets
+### /assets
  All domain related assets. The `imgs` folder is for bitmap-images, the `svgs` folder for vector-images. Image-sprites should be placed inside `sprites`. Please use folder names to separate responsive/retina images. Decide if you prefer “factor” (`x1`,`x2`) or “resolution” (`1024x786`,`2048x1572`) based names. Do not use a device name such as “ipad”, “iphone” or “desktop”.
 
-## /bower_components
+### /bower_components
 Everything that is managed by bower. This should be every third-party library.
 f you add some, keep in mind to check their license - we can not use anything without a proper license.
 If in doubt, look at [OSS Licenses](http://choosealicense.com/licenses/)
 
-## /docs
+### /docs
 Looking for documentation? Here you should find it.
 
-## /grunt
+### /grunt
 All grunt-tasks. One file per task.
 
-## /mock
+### /mock
 Mock-data, usually as `JSON`
 
-## /scripts
+### /scripts
 All (java)script files. Organised in `base` and `modules`. Please use a “one file for one feature” approach and take a look at the templates in `_template`. There's also a `build` folder if you're building minimised files locally.
 
-## /styles
+### /styles
  All *css files. If you like myth, sass or less this is the place to store them. Again, organised in `base` and `modules`. Please use a “one file for one feature” approach. There's also a `build` folder if you're building minimised files locally.
 
-## /tests
+### /tests
 We like automated testing. We prefer BDD using Mocha with Chai and Sinon or Jasmine. Use DalekJS/NightwatchJs/NightmareJs for acceptance testing. Please integrate them in your build process.
 
-## /vendor
+### /vendor
 All the third-party-elements which are not managed by bower. Same rules as all other third-party-components.
 If your script requires a css file (or if you want to add just a css file) place them both inside the `vendor` subfolder. Makes it easier to update, replace or remove it. Really.
 
-# Contribution
+## Contribution
 Feel free to add or change anything.
 But please: talk to Marin Krause or your technical lead so they can update the documentation and explain your ideas and modifications to the next developer.
 
