@@ -103,7 +103,7 @@ If you're using “web-fonts” never “just use this file”. Verify with the 
 - No “compiled” files inside the repository (`node_modules`, `bower_components` etc).
 - The default language is English. Even for variable and function naming.
 - Preserve the license, author and version.
-- Intend using Tabs.
+- Indent using Tabs.
 
 
 ## Build & Deployment
@@ -178,7 +178,7 @@ We’re using UTF-8, make sure your IDE is on board. Besides: there is no need t
 - Keep selectors as simple and short as possible. Max three levels deep,
 - Avoid inline styling.
 - Use one file per module. Every module should be independent.
-- Intend using Tabs.
+- Indent using Tabs.
 - *Lint* your files
 
 
@@ -321,7 +321,7 @@ Please don't let your fellow developers guess what you did. Structure your CSS-f
 - Put one space before `{` in rule declarations.
 - Put line breaks between rule sets.
 - Use a semicolon after every declaration.
-- Intend your CSS just one level deep.
+- Indent your CSS just one level deep.
 
 
 ### Validation
@@ -390,7 +390,7 @@ Do not use representation in your variables, use generic names that communicate 
 - Never omit curly braces or semicolons.
 - Avoid `this` unless you're sure what it refers to.
 - Avoid changing the `protoype`-chain.
-- Intend using tabs.
+- Indent using tabs.
 
 ### Architecture
 Use a decoupled approach (`pub/sub`, `event-driven`, `mediator`) and use one file per module. Every module should be independent.
