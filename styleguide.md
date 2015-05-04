@@ -296,7 +296,7 @@ Remember: Never reference `.js-` prefixed class names inside your css files.
 #### Performance
 
 Use [CSS-Sprites][css-sprites], [Icon-Fonts][icon-fonts] and write [efficient selectors][efficient-selectors].
-Don't over qualify your selectors keep them as simple as possible and max three levels deep. Don't tag-qualify, never write `div#foo {…}` or `div.foo {…}`and avoid the universal selector `*`.
+Don't over qualify your selectors - keep them as simple as possible and max three levels deep (see [Cyclomatic Complexity: Logic in CSS][cyclomatic-complexity-css]). Don't tag-qualify, never write `div#foo {…}` or `div.foo {…}`and avoid the universal selector `*`.
 
 ##### Example
 ```CSS
@@ -537,4 +537,5 @@ If in doubt contact [martin.krause@razorfish.de](mailto:martin.krause@razorfish.
 [js-essential-patterns]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/
 [js-eloquent]: http://eloquentjavascript.net/
 
-[efficient selectors]: http://csswizardry.com/2011/09/writing-efficient-css-selectors
+[efficient-selectors]: http://csswizardry.com/2011/09/writing-efficient-css-selectors
+[cyclomatic-complexity-css]: http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/
